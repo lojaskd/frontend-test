@@ -1,0 +1,35 @@
+.card{
+  border-radius:5px;
+  .card-image{
+    border-radius:5px 0 0 5px;
+  }
+  &.disclaimer{
+    .icon{
+      display:inline-block;
+      margin:0 25px;
+      @include sprite($disclaimer-icon);
+    }
+    &.before{
+      border-radius:5px 5px 0 5px;
+      margin-bottom:$disclaimer-arrow-bottom-height * 2;
+      .icon-arrow{
+        position:absolute;
+        bottom:$disclaimer-arrow-bottom-height * (-1);
+        right:0;
+        display:block;
+        @include sprite($disclaimer-arrow-bottom);
+      }
+    }
+    &.after{
+      border-radius:5px 0 5px 5px;
+      margin-top:$disclaimer-arrow-top-height * 2;
+      .icon-arrow{
+        position:absolute;
+        top:$disclaimer-arrow-top-height * (-1);
+        right:0;
+        display:block;
+        @include sprite($disclaimer-arrow-top);
+      }
+    }
+  }
+}

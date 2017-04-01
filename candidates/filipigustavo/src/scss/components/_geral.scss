@@ -1,0 +1,116 @@
+#lkd{
+  &.login{
+    background:$cor-azul-claro url(../img/bg-login.jpg) repeat-x left top;
+  }
+  &.pedido{
+    background:$cor-cinza-claro url(../img/bg-pedido.jpg) repeat-x left top;
+  }
+}
+
+.container {
+  width:90%;
+}
+@media #{$medium-and-up} {
+  .container {
+    width:570px;
+  }
+}
+@media #{$large-and-up} {
+  .container {
+    width:962px;
+  }
+}
+@media #{$extra-large-and-up} {
+  .container {
+    width:1170px;
+  }
+}
+
+.container{
+  position:relative;
+  .row{
+    position:relative;
+    .col{
+      position:relative;
+    }
+  }
+}
+
+a{
+  text-decoration:underline;
+  @extend .font-lato;
+}
+
+.btn-floating{
+  &.btn-info{
+    position:absolute;
+    top:0;
+    right:0;
+    width:20px;
+    height:20px;
+    line-height:16px;
+    background:$cor-branco;
+    box-shadow:none;
+    border:2px solid $cor-azul-claro;
+    .icon{
+      font-size: 12px;
+      width:16px;
+      height:16px;
+      line-height: 16px;
+      font-style: normal;
+      font-weight:700;
+      color:$cor-azul-claro;
+    }
+    &.inline{
+      position:relative;
+    }
+    &:hover{
+      background:$cor-azul-claro;
+      .icon{
+        color:$cor-branco;
+      }
+    }
+  }
+}
+
+.btn{
+  &.lkd{
+    border-radius:5px;
+    margin-bottom:20px;
+    margin-top:30px;
+    @extend .font-lato;
+  }
+}
+
+.lkd-logo{
+  display:block;
+  margin:0 auto;
+  @include sprite($logo);
+}
+
+.msg-err{
+  position:absolute;
+  width:100%;
+  bottom:3px;
+  margin:0 -0.75rem;
+  .input-err{
+    position:relative;
+    display:inline-block;
+    background:$cor-vermelho;
+    color:$cor-branco;
+    padding:2px 5px;
+    font-size:12px;
+    font-weight:300;
+    border-radius:0 3px 3px 3px;
+    .arrow{
+      position:absolute;
+      top:-7px;
+      left:0;
+      @include sprite($login-arrow-err);
+    }
+  }
+}
+
+.font-lato{
+  font-family: 'Lato', sans-serif;
+}

@@ -1,0 +1,11 @@
+#footer{
+  .logo{
+    @extend .lkd-logo;
+    padding-top:55px;
+    text-align:center;
+    margin-bottom:50px;
+    line-height:50px;
+    @extend .font-lato;
+    font-size:14px;
+  }
+}
