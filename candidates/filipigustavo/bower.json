@@ -1,0 +1,21 @@
+{
+  "name": "lojaskd-frontend-challenge-filipi",
+  "description": "Teste para Front-End Developer",
+  "main": "index.html",
+  "authors": [
+    "Filipi Gustavo"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/filipigustavo/frontend-challenge",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "materialize": "^0.98.1"
+  }
+}

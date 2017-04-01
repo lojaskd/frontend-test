@@ -1,0 +1,63 @@
+#header{
+  display:block;
+  .lkd{
+    display:block;
+    margin:0;
+    padding:0;
+    width:auto;
+    .logo{
+      @extend .lkd-logo;
+    }
+  }
+  .title{
+    font-size:18px;
+    line-height:24px;
+    color:$cor-branco;
+    font-weight:300;
+    margin:25px 0 5px;
+  }
+  .link-lkd{
+    font-size:12px;
+    font-weight:300;
+    color:$cor-branco;
+    text-decoration:none;
+    &:hover{
+      text-decoration:underline;
+    }
+  }
+  .top-menu{
+    display:block;
+    list-style:none;
+    margin:25px 0 0;
+    padding:0;
+    height:24px;
+    li{
+      display:inline-block;
+      line-height:24px;
+      margin-left:15px;
+      a{
+        font-size:16px;
+        color:$cor-branco;
+        text-decoration:none;
+        font-weight:300;
+        .icon{
+          display:inline-block;
+          margin-left:5px;
+          &.link{
+            @include sprite($icon-link);
+          }
+        }
+        &:hover{
+          text-decoration:underline;
+        }
+      }
+      &:first-child{
+        margin:0;
+      }
+    }
+  }
+  
+  #lkd.login &{
+    margin:60px 0 30px;
+  }
+}

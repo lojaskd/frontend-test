@@ -1,0 +1,29 @@
+{
+  "name": "lojaskd-frontend-challenge-filipi",
+  "version": "1.0.0",
+  "description": "Teste para Front-End Developer",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipigustavo/frontend-challenge.git"
+  },
+  "author": "Filipi Gustavo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipigustavo/frontend-challenge/issues"
+  },
+  "homepage": "https://github.com/filipigustavo/frontend-challenge#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-watch": "^4.3.11",
+    "gulp.spritesmith": "^6.4.0",
+    "streamqueue": "^1.1.1"
+  }
+}

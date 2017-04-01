@@ -1,0 +1,23 @@
+.input-field{
+  label{
+    sup{
+      color:red;
+    }
+  }
+}
+
+input[type=number]:focus:not([readonly]),
+input[type=text]:focus:not([readonly]){
+  border-bottom:1px solid $cor-azul-claro;
+  box-shadow:0 1px 0 0 $cor-azul-claro;
+}
+
+input[type=number]:focus:not([readonly]) + label,
+input[type=text]:focus:not([readonly]) + label{
+  color:$cor-azul-claro;
+}
+
+input[type=number].valid + label,
+input[type=text].valid + label{
+  color:$cor-verde;
+}
