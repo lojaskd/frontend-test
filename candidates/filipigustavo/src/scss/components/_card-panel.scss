@@ -16,6 +16,9 @@
       color:$cor-azul-claro;
       text-transform:none;
     }
+    &:not(.form){
+      @extend .font-lato;
+    }
   }
   
   &.component{
@@ -27,6 +30,7 @@
       margin:15px 0 5px;
       color:$cor-cinza;
       font-weight:300;
+      @extend .font-lato;
     }
     .desc{
       font-size:16px;
@@ -55,6 +59,7 @@
       li{
         font-size:14px;
         color:$cor-azul-claro;
+        @extend .font-lato;
       }
     }
   }
@@ -114,6 +119,7 @@
       line-height:20px;
       text-align:right;
       margin-right:10px;
+      @extend .font-lato;
     }
     .flag{
       display:block;
@@ -140,6 +146,7 @@
       padding-left:10px;
       font-size:14px;
       color:$cor-cinza;
+      @extend .font-lato;
     }
   }
   &.products{
@@ -159,11 +166,13 @@
         font-size:12px;
         color:$cor-cinza;
         text-transform:uppercase;
+        @extend .font-lato;
       }
       .details{
         li{
           font-size:14px;
           color:$cor-cinza-escuro;
+          @extend .font-lato;
           .name{
             color:$cor-cinza;
           }
@@ -285,6 +294,7 @@
             color:$cor-cinza;
             font-weight:300;
             line-height:20px;
+            @extend .font-lato;
           }
         }
       }

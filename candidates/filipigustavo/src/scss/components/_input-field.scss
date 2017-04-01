@@ -1,8 +1,12 @@
 .input-field{
   label{
+    @extend .font-lato;
     sup{
       color:red;
     }
+  }
+  input{
+    @extend .font-lato;
   }
 }
 

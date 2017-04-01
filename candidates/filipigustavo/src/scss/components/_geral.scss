@@ -38,6 +38,7 @@
 
 a{
   text-decoration:underline;
+  @extend .font-lato;
 }
 
 .btn-floating{
@@ -77,6 +78,7 @@ a{
     border-radius:5px;
     margin-bottom:20px;
     margin-top:30px;
+    @extend .font-lato;
   }
 }
 
@@ -107,4 +109,8 @@ a{
       @include sprite($login-arrow-err);
     }
   }
+}
+
+.font-lato{
+  font-family: 'Lato', sans-serif;
 }
