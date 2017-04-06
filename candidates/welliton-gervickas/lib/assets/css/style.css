@@ -1,0 +1,322 @@
+/*body & dashboard styles */
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size:14px;
+}
+body.system-login{
+	background-image: url(../images/bglogin.jpg);
+	background-repeat:repeat-x;
+	background-color:#0288d1;
+	color:#757575;
+	padding-top:30px;
+	font-size: 12px;
+}
+/*Login styles */
+.login {
+  max-width:370px;
+}
+.login .logo{
+	min-height:120px;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.login .form {
+  background-color:#FFF;
+  min-height:300px;
+  box-shadow: 0px 9px 20px -5px #666;
+  padding: 15px 0px 15px 0px;
+}
+.login h3 {
+	font-weight: 200;
+  color: #0288d1;
+  border-left:3px solid #0288d1;
+  line-height:40px;
+  padding-left:20px;
+}
+.login .form-group{
+	margin-bottom:25px;
+}
+.login .form-control{
+	position: relative;
+	z-index:1;
+	box-shadow: none;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px;
+	border-bottom:1px solid #eee;
+	min-height:40px;
+	background-color: transparent;
+	padding:0px;
+}
+.login label {
+  font-weight: lighter;
+  position: absolute;
+  margin-top: 15px;
+  z-index:0;
+  left:15px;
+  transition:All 0.5324s ease;
+	-webkit-transition:All 0.5324s ease;
+	-moz-transition:All 0.5324s ease;
+	-o-transition:All 0.5324s ease;
+}
+.login .labelgo {
+	color: #039be5;
+	font-size:90%;
+  margin-top: -5px;
+}
+.login .labelgono {
+    color: #e46868;
+}
+.login .error {
+  background-color: #e53935;
+  color: #fff;
+  padding: 2px 15px; 
+  position: absolute;
+  font-size: 12px;
+  left: 30%;
+  z-index:9;
+}
+.error img {
+  position: absolute;
+  top: -5px;
+  left: 0px;
+}
+.login a{
+	color: #03a9f4;
+	font-size: 12px;
+}
+/*dashboard styles*/
+body.system-dashboard{
+  border-top: 3px solid #ffd740;
+  background-color: #ebebeb;
+  background-image: url(../images/bgdash.jpg);
+  background-repeat:repeat-x;
+}
+.main-menu {
+  text-align: right;
+}
+.main-menu-btn .btn-link {
+    float: right;
+    color: #fff;
+    font-size: 22px;
+}
+.dashboard nav, .dashboard nav a{
+  color:#fff;
+}
+.dashboard nav {
+  min-height: 80px;
+  padding: 20px 0px;
+}
+.dashboard h2{
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+.dashboard nav a, .main-menu span{
+  font-size: 14px;
+}
+.orderstatus {
+  min-height:300px;
+  padding:5px 15px;
+  border-radius:4px;
+  background-color: #fff;
+  box-shadow: 0px 9px 20px -5px #b9b9b9;
+  border-bottom:8px solid #ffd740;
+}
+.dashcontent h3{
+  color:#bdbdbd;
+  margin-bottom: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.orderstatus h4, .product-info{
+  color:#bdbdbd;
+  font-size:14px;
+  margin-bottom:0px;
+}
+#listorderproducts{
+  display: none;
+  padding:15px;
+  background-color: #ebebeb;
+}
+.orderstatus .btn-link {
+  padding: 0px;
+  color: #757575;
+  outline: none !important;
+}
+.orderstatus .btn-link > span {
+    font-size: 9px;
+}
+.orderstatus p{
+  color: #757575;
+  margin-bottom: 15px;
+  font-size:16px;
+}
+.status-checked{
+  color: #5db561;
+}
+.datelist-order{
+  min-height: 30px;
+}
+.datelist-status{
+  min-height:40px;
+}
+.alert-open {
+    position: absolute;
+    right: 15px;
+    background-color: transparent;
+    color: #0288d1;
+    border: 2px solid #0288d1;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-weight: bold;
+}
+.alert-open-active {
+    background-color: #0288d1;
+    color: #fff;
+}
+.datelist-info{
+  display: none;
+}
+.datelist-date, 
+.datelist-title {
+    line-height: 25px;
+    font-size: 14px;
+}
+.datelist-status {
+  padding-right: 35px;
+  padding-left: 35px;
+  border-left: 2px solid transparent;
+}
+.datelist-finish{
+  border-color: #0288d1;
+}
+.datelist-status > .glyphicon {
+    border: 2px solid #ccc;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    margin-left: -50px;
+    background-color: #ccc;
+    margin-top: -1px;
+}
+.datelist-status.datelist-finish > .glyphicon {
+    border:2px solid #0288d1;
+    background-color: #0288d1;
+    color: #fff;
+}
+.datelist-status.datelist-working > .glyphicon {
+    border:2px solid #4caf50;
+    background-color: #4caf50;
+    color: #fff;
+}
+.alert-balon {
+  border-radius: 5px;
+  margin-top:30px;
+  padding: 15px 15px 15px 100px;
+  background-color: #039be5;
+  color: #fff;
+  background-image: url(../images/bgbalon.jpg);
+  background-repeat: no-repeat;
+  background-position:left center;
+}
+.alert-balon-in {
+    position: absolute;
+    right: 15px;
+    margin-top: -30px;
+}
+.thumb-exemple {
+  background-color: #676767;
+  width: 100%;
+  height: 80px;
+  display: inline-block;
+  content: '';
+  padding: 1px;
+}
+.product-name {
+    font-size: 16px;
+}
+.status-default{
+  color: #757575;
+}
+.extra-status {
+  float: left;
+  padding: 20px 20px;
+}
+.extra-status h3{
+  color:#757575;
+}
+.extra-status p{
+  color:#bdbdbd;
+  font-size: 14px;
+}
+.step-status {
+  float: left;
+  border-radius: 100%;
+  border: 2px solid #d8d8d8;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 1
+}
+.step-status-separator {
+  width: 16%;
+  height: 2px;
+  background-color: #d8d8d8;
+  position: relative;
+  float: left;
+  top: 22px;
+  z-index: 0;
+}
+.step-status.step-finish {
+  border-color: #0288d1;
+}
+.datelist-working, 
+.step-status.step-work {
+  border-color: #4caf50;
+}
+.step-work.stepactive, 
+.step-status-separator.step-in-work{
+  background-color: #4caf50;
+}
+.step-work.stepactive img{
+  filter: brightness(0) invert(1);
+}
+.timeline-status {
+  padding: 20px 0px;
+  width: 100%;
+}
+.expand-content span, 
+.timeline-status img{
+  cursor: pointer;
+}
+.extra-status, 
+.timeline-status{
+  display:none;
+}
+.dashfooter{
+  padding-top:80px;
+  padding-bottom:80px;
+}
+
+/*Styles Bootstrap Fix*/
+button{outline: none !important;}
+.clear{display:block;width: 100%; clear: both;}
+.btn{border-radius:3px;}
+.btn-primary{background-color:#0288d1;border-color:#0288d1;}
+/*Mobile Styles */
+@media(max-width:768px){
+  .main-menu{
+    display: none;
+    text-align: left;
+  }
+  .alert-balon, .orderstatus{
+    margin-bottom: 15px;
+  }
+}
